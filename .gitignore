@@ -1,0 +1,93 @@
+## =========================
+## .NET / Visual Studio
+## =========================
+**/rag/**
+bin/
+obj/
+[Bb]uild/
+[Rr]elease/
+[Dd]ebug/
+out/
+publish/
+TestResults/
+
+## Arquivos de usuário / IDE
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.csproj.user
+*.vcxproj.user
+
+## Artefatos de compilação
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.obj
+*.lib
+*.exp
+*.nupkg
+*.snupkg
+
+## Logs
+*.log
+logs/
+
+## =========================
+## VS Code
+## =========================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+## =========================
+## Ferramentas e pacotes
+## =========================
+packages/
+artifacts/
+.nuget/
+*.DotSettings.user
+
+## =========================
+## Arquivos temporários / SO
+## =========================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## =========================
+## Segredos e configurações locais
+## =========================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+secrets.json
+appsettings.local.json
+appsettings.Development.local.json
+
+## =========================
+## Cobertura / ferramentas
+## =========================
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+
+## Dotnet local tools / caches
+.config/dotnet-tools.json.user
