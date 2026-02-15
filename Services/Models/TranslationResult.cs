@@ -1,4 +1,4 @@
-namespace TraducaoRealtime.Services;
+namespace TraducaoRealtime.Services.Models;
 
 internal sealed record TranslationResult(
     string RecognitionLanguage,

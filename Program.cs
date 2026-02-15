@@ -2,7 +2,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TraducaoRealtime.Configuration;
-using TraducaoRealtime.Services;
+using TraducaoRealtime.Services.Configuration;
+using TraducaoRealtime.Services.Contracts;
+using TraducaoRealtime.Services.Orchestration;
 
 namespace TraducaoRealtime;
 
@@ -25,7 +27,7 @@ internal static class Program
         }
 
         using var form = new OverlayForm();
-        IRealTimeTranslator translator = new RealTimeTranslator(translationEnvironment!);
+        IRealTimeTranslator translator = new RealTimeTranslationOrchestrator(translationEnvironment!);
         AiAnalysisForm? aiAnalysisForm = null;
         CancellationTokenSource? cancellationTokenSource = null;
         var aiMinimizedByMain = false;

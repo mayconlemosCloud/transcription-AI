@@ -1,14 +1,17 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using TraducaoRealtime.Services.Configuration;
+using TraducaoRealtime.Services.Contracts;
+using TraducaoRealtime.Services.Models;
 
-namespace TraducaoRealtime.Services;
+namespace TraducaoRealtime.Services.Providers.OpenAi;
 
-internal sealed class OpenAiRealTimeTranslator : IRealTimeTranslator
+internal sealed class OpenAiTranslator : IRealTimeTranslator
 {
     private readonly TranslationEnvironment environment;
 
-    public OpenAiRealTimeTranslator(TranslationEnvironment environment)
+    public OpenAiTranslator(TranslationEnvironment environment)
     {
         this.environment = environment;
     }

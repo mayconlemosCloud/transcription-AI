@@ -1,6 +1,6 @@
 using System;
 
-namespace TraducaoRealtime.Services;
+namespace TraducaoRealtime.Services.Configuration;
 
 internal enum TranslationProvider
 {

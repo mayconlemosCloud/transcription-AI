@@ -6,15 +6,18 @@ using Microsoft.CognitiveServices.Speech.Audio;
 using Microsoft.CognitiveServices.Speech.Translation;
 using NAudio.CoreAudioApi;
 using NAudio.Wave;
+using TraducaoRealtime.Services.Configuration;
+using TraducaoRealtime.Services.Contracts;
+using TraducaoRealtime.Services.Models;
 
-namespace TraducaoRealtime.Services;
+namespace TraducaoRealtime.Services.Providers.AzureSpeech;
 
-internal sealed class AzureSpeechRealTimeTranslator : IRealTimeTranslator
+internal sealed class AzureSpeechTranslator : IRealTimeTranslator
 {
     private readonly TranslationEnvironment environment;
     private SpeechTranslationConfig? cachedConfig;
 
-    public AzureSpeechRealTimeTranslator(TranslationEnvironment environment)
+    public AzureSpeechTranslator(TranslationEnvironment environment)
     {
         this.environment = environment;
     }
